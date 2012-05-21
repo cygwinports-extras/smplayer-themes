@@ -1,6 +1,6 @@
 DESCRIPTION="Icon themes for SMPlayer"
 HOMEPAGE="http://smplayer.sourceforge.net/"
-SRC_URI="mirror://sourceforge/smplayer/${P}.tar.bz2"
+SRC_URI="mirror://sourceforge/smplayer/${P}.tar.gz"
 
 src_compile() { :; }
 
