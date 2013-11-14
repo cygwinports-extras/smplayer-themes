@@ -1,0 +1,18 @@
+NAME="smplayer-themes"
+VERSION=20120131
+RELEASE=1
+CATEGORY="Video"
+SUMMARY="Icon themes for SMPlayer"
+DESCRIPTION="SMPlayer intends to be a complete front-end for MPlayer, from
+basic features like playing videos, DVDs, and VCDs to more advanced
+features like support for MPlayer filters and more."
+HOMEPAGE="http://smplayer.sourceforge.net/"
+SRC_URI="mirror://sourceforge/smplayer/${NAME}-${VERSION}.tar.gz"
+
+src_compile() { :; }
+
+src_install() {
+	dodir /usr/share/smplayer
+	cp -r ${S}/themes ${D}/usr/share/smplayer/
+}
+DOCS="*.txt"
