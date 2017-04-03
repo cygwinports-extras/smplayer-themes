@@ -1,5 +1,7 @@
+inherit qt5
+
 NAME="smplayer-themes"
-VERSION=20120919
+VERSION=17.3.0
 RELEASE=1
 CATEGORY="Video"
 SUMMARY="Icon themes for SMPlayer"
@@ -9,7 +11,10 @@ features like support for MPlayer filters and more."
 HOMEPAGE="http://smplayer.sourceforge.net/"
 SRC_URI="mirror://sourceforge/smplayer/${NAME}-${VERSION}.tar.bz2"
 
-src_compile() { :; }
+src_compile() {
+	cd ${S}
+	cygmake
+}
 
 src_install() {
 	cd ${S}
